@@ -43,13 +43,15 @@ The shell commands are listed as what you would run if you are using a compiled 
 ### Example 1
 Example 1 uses the `'Hello World!'` language. It's a fairly simple language, but a good demonstration of the basic usage of Metax.
 
-It can be run like so
+It can be run like so;
 ```bash
 ./metax ./examples/example1.\'Hello\ World\!\'
 ```
 ```bash
 deno run --allow-read ./src/metax.ts ./examples/example1.\'Hello\ World\!\'
 ```
+#### Output
+> Hello World!
 
 ### Example 2
 Example 2 uses the `const join = function(){const array = [-3, -2, -1, 0, 1, 2, 3]; return array.join(' ');};join();` language. It nicely demonstrates the use of functions, but is often slated for not utilising the alternative `≫` operator to replace the `function` keyword with ES6 anonymous arrow function notation. As such, the `(() =≫ {const array = [-3, -2, -1, 0, 1, 2, 3]; return array.join(' ')})();` language is preferred by many.
@@ -60,6 +62,8 @@ Example 2 uses the `const join = function(){const array = [-3, -2, -1, 0, 1, 2, 
 ```bash
 deno run --allow-read ./src/metax.ts ./examples/example2.const\ join\ \=\ function\(\)\{const\ array\ \=\ \[-3\,\ -2\,\ -1\,\ 0\,\ 1\,\ 2\,\ 3\]\;\ return\ array.join\(\'\ \'\)\;\}\;join\(\)\;
 ```
+#### Output
+> -3 -2 -1 0 1 2 3
 
 ### Example 3
 Example 3 demonstrates the use of alternative operators. Note the use of `××`, which gets interpreted by Metax as `**`, which is JavaScript's exponentiation operator.
@@ -69,3 +73,5 @@ Example 3 demonstrates the use of alternative operators. Note the use of `××`,
 ```bash
 deno run --allow-read ./src/metax.ts ./examples/example3.\(12\ ÷\ 4\)\ ≪\ \(\ 2\ ××\ 2\)
 ```
+#### Output
+> true
