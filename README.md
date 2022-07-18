@@ -10,7 +10,7 @@ There is no code in the file, yet Metax magically knows what your intentions are
 Languages made to run on the Metax interpreter use TypeScript rules and syntax.
 
 ## Alternative operators
-Due to the nature of how operating systems work with file names and paths, it is impossible to use some characters in your language's name. In order to circumvent this, Metax supports some alternative characters which get replaced with their JavaScript counterparts your language is run.
+Due to the nature of how operating systems work with file names and paths, it is impossible to use some characters in your language's name. In order to circumvent this, Metax supports some alternative characters which get replaced with their JavaScript counterparts when your language is run.
 
 `≪` (`U+226A`, much less-than) maps to `<`; JavaScript's [*less than* operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than).
 
